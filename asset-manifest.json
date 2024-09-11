@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/equality_challenge/static/css/main.113ae105.css",
+    "main.js": "/equality_challenge/static/js/main.7e14968d.js",
+    "static/media/scene2.webp": "/equality_challenge/static/media/scene2.ad017893aaaacba0a551.webp",
+    "static/media/finalscene.jpeg": "/equality_challenge/static/media/finalscene.11aee95a238f08f807ea.jpeg",
+    "static/media/scene4.jpeg": "/equality_challenge/static/media/scene4.b4706474c68236c10960.jpeg",
+    "static/media/scene3.jpeg": "/equality_challenge/static/media/scene3.f2720cfc4ebb71607083.jpeg",
+    "static/media/scene1.jpg": "/equality_challenge/static/media/scene1.8b8399de32590ecca692.jpg",
+    "index.html": "/equality_challenge/index.html",
+    "main.113ae105.css.map": "/equality_challenge/static/css/main.113ae105.css.map",
+    "main.7e14968d.js.map": "/equality_challenge/static/js/main.7e14968d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.113ae105.css",
+    "static/js/main.7e14968d.js"
+  ]
+}
