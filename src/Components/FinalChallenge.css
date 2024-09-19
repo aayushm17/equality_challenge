@@ -3,6 +3,10 @@
   width: 100%;
   height: 100vh;
   background-color: #f0f0f0;
+  font-family: 'Press Start 2P', cursive; /* added a pixel font */
+  display: flex; /* added flexbox to position scenario content at the bottom */
+  flex-direction: column; /* stacked elements vertically */
+  justify-content: flex-end; /* pushed scenario content to the bottom */
 }
 
 .background-image {
@@ -11,14 +15,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: 120%; /* Zoom out the background image */
+  background-size: cover;
   background-position: center;
   filter: blur(5px);
 }
 
 .scenario-content {
-  position: relative;
-  z-index: 1;
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -28,6 +30,9 @@
 
 .scenario-content h2 {
   margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0px #fff; /* added text shadow */
 }
 
 .choices {
@@ -37,15 +42,18 @@
 .choices button {
   margin: 10px;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #8BC34A; /* changed button color to a more vibrant green */
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: bold; /* made button text bold */
+  text-shadow: 1px 1px 0px #333; /* added text shadow */
 }
 
 .choices button:hover {
-  background-color: #3e8e41;
+  background-color: #64B53A; /* changed hover color to a darker green */
 }
 
 .correct-choice {
@@ -59,4 +67,7 @@
 
 .correct-choice p {
   margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-shadow: 1px 1px 0px #fff; /* added text shadow */
 }

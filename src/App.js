@@ -20,6 +20,7 @@ const App = () => {
 
   return (
     <div className="app-container">
+      <h1 className="equality-challenge">Equality Challenge</h1>
       {currentScenario === 1 && (
         <Scenario1
           handleNextScenario={handleNextScenario}
@@ -50,14 +51,22 @@ const App = () => {
           handlePoints={handlePoints}
         />
       )}
-      {currentScenario > 5 && (
+      
+  {currentScenario > 5 && (
+    <div className="result">
+      <p>Your total points: {points}</p>
+      {points > 80 ? (
         <div className="congratulations">
           <h2>Congratulations!</h2>
-          <p>You have completed the Equality Challenge.</p>
-          <p>Your total points: {points}</p>
-          {points > 80 && <p>You have won!</p>}
+          <p>You have won!</p>
         </div>
+      ) : (
+        <p>You were not able to complete the Equality Challenge. Try Again!!</p>
       )}
+    </div>
+  )}
+  
+
     </div>
   );
 };

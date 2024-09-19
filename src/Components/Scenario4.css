@@ -1,62 +1,73 @@
 .scenario-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(3px);
-  }
-  
-  .scenario-content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .scenario-content h2 {
-    margin-top: 0;
-  }
-  
-  .choices {
-    margin-top: 20px;
-  }
-  
-  .choices button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .choices button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .correct-choice {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .correct-choice p {
-    margin-bottom: 10px;
-  }
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: 'Press Start 2P', cursive; /* added a pixel font */
+  display: flex; /* added flexbox to position scenario content at the bottom */
+  flex-direction: column; /* stacked elements vertically */
+  justify-content: flex-end; /* pushed scenario content to the bottom */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+}
+
+.scenario-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scenario-content h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0px #fff; /* added text shadow */
+}
+
+.choices {
+  margin-top: 20px;
+}
+
+.choices button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #8BC34A; /* changed button color to a more vibrant green */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold; /* made button text bold */
+  text-shadow: 1px 1px 0px #333; /* added text shadow */
+}
+
+.choices button:hover {
+  background-color: #64B53A; /* changed hover color to a darker green */
+}
+
+.correct-choice {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.correct-choice p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  text-shadow: 1px 1px 0px #fff; /* added text shadow */
+}
